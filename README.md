@@ -7,7 +7,7 @@ PostgreSQL
 - SQL
 
 ## ERD
-
+<img src="Screenshots/Final ERD.PNG" width="650" height="375" />
 
 
 
