@@ -18,6 +18,8 @@ PostgreSQL
 
 
 ## Analysis
+<img src="Screenshots/my7_view.PNG" width="650" height="375" />
+<img src="Screenshots/m7_sql.PNG" width="650" height="375" />
 
 
 
