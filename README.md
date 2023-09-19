@@ -1,7 +1,6 @@
 # World Bank Database and Population Analysis With PostgreSQL
 
-Some description!
-
+<img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
 ## Packages Used
 PostgreSQL
