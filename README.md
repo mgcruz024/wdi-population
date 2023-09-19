@@ -3,6 +3,10 @@
 Some description!
 
 
+## Packages Used
+PostgreSQL
+- SQL
+
 ## ERD
 
 
