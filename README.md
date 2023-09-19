@@ -14,7 +14,7 @@ Some description!
 
 
 
-## Analyses
+## Analysis
 
 
 
