@@ -23,7 +23,7 @@ Population Indicators:
 
 
 ## Packages Used
-PostgreSQL
+PostgreSQL 14
 - SQL
 
 ## ERD
