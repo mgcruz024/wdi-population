@@ -14,7 +14,7 @@ an associative entity containing a list of countries for each continent. "Countr
 associate entity that contains a list of each country's indicator value, with date as the 
 primary key. 
 
-## Cleansing
+## Cleansing and Normalization 
 
 
 
@@ -24,10 +24,10 @@ primary key.
 <img src="Screenshots/m7_view.png" width="550" height="300" />
 <img src="Screenshots/m7_sql.png" width="450" height="300" />
 
-
-
-
-
+WDI Database allows for the execution of complex, Type I, and Type II nested queries that deliver
+tangible answers to questions pertaining to the global population. With the many indicators available,
+questions such as the M7 example above can be answered. M7 uses a nested query to calculate the average
+population % growth for all countries since 2010 and sort them in descending order.
 
 ## Maintenance
 
