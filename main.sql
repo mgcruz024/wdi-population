@@ -26,7 +26,6 @@ SELECT * FROM country_data LIMIT 10;
 ----------------------- Analyze current data ------------------------------------------
 ---------------------------------------------------------------------------------------
 
-
 -- Potential issue 1: the database may not be normalized 
 -- Potential issue 2: data violating FK constraints may already exist in these tables
 
@@ -34,19 +33,15 @@ SELECT * FROM country_data LIMIT 10;
 -- How many continent codes we have? 
 SELECT DISTINCT continent_code FROM continent_country;
 
--- Let's create a table with continents so that we can store their codes and corresponding names
+-- Create a table with continents to store their codes and corresponding names
 SELECT DISTINCT continent_code code
 INTO continent
 FROM continent_country;
--- enforce PK, add the name::varchar(25) by hand and populate names by hand (view/edit data ->all records->enter data->F6)
--- or you can use seven UPDATE statements...
 
 -- *** Relationship between country2 and continent_country
--- Are the codes in country2 unique?
--- Yes, because it is a single-column PK. They also have no nulls. No analysis is needed.
+-- Are the codes in country2 unique? YES
 
 -- Are there any country_code_a2 values in continent_country which do not exist in country2?
--- If yes, we have a problem (except if it is Null)
 SELECT DISTINCT country_code_a2 FROM continent_country
 EXCEPT
 SELECT DISTINCT code FROM country2;
@@ -66,43 +61,37 @@ FROM continent_country
 GROUP BY continent_code
 HAVING COUNT(*)>1
 ORDER BY continent_code;
--- So continent_country is an associative table.
+-- FINDING: continent_country is an associative table.
 
 -- *** Relationship between country and country_data
 -- Are there any country_code values in country_data which do not exist in country?
--- If yes, we have a problem (except if it is Null)
 SELECT DISTINCT country_code FROM country_data
 EXCEPT
 SELECT DISTINCT code FROM country;
 
 -- *** Relationship between indicator and country_data
 -- Are there any indicator_code values in country_data which do not exist in indicator?
--- If yes, we have a problem (except if it is Null)
 SELECT DISTINCT indicator_code FROM country_data
 EXCEPT
 SELECT DISTINCT code FROM indicator;
 
 -- *** Relationship between country and continent_country
 -- Are there any country_code_a3 values in continent_country which do not exist in country?
--- If yes, we have a problem (except if it is Null)
 SELECT DISTINCT country_code_a3 FROM continent_country
 EXCEPT
 SELECT DISTINCT code FROM country;
--- There are MANY so we will not be able to enforce referential integrity constraits unless we fix this
--- It would also be nice (and in compliance with the 3NF) to have all countries in one table 
--- that is one-to-many-related with continent_country and country_data
+-- There are MANY. Will not be able to enforce referential integrity constraits unless 
+-- this is fixed
 
--- To do this we would have to change the PK in either continent_country or country_data
--- Let's check for potential issues:
+
+-- Change the PK in either continent_country or country_data
+-- Check for potential issues:
 
 -- Does each country_code_a2 in continent_country have a corresponding country_code_a3?
--- If yes, it is a good thing.
 SELECT * FROM continent_country
 WHERE country_code_a3 IS NULL;
 
 -- Are there any country codes which exist in country but do not exist in continent_country?
--- Note: We already know that a PK value exist for each country_code_a2  
--- If yes, what are they?
 SELECT code FROM country 
 EXCEPT
 SELECT country_code_a3 
@@ -110,19 +99,12 @@ FROM continent_country
 ORDER BY code;
 
 -- Are there any country codes in continent_country which do not exist in country?
--- If yes, what are they?
 SELECT country_code_a3 FROM continent_country
 EXCEPT
 SELECT code FROM country
 ORDER BY country_code_a3;
 
--- So this is an issue which we are going to address later in this course.
--- We need to attempt to reconcile country and country2 without losing any data.
-
--- At this time let's focus on enforcing the other FK constraints.
--- NOTE: We will be able to setup but not validate this constraint
--- Let's take a look at the "logical" ERD for our non-normalized model
--- https://www.dropbox.com/s/66664cd7i3kq8un/Module%2007%20ERD%20logical.png?dl=0
+-- Attempt to reconcile country and country2 without losing any data.
 
 ---------------------------------------------------------
 -- Let's now learn about enforcing referential integrity
