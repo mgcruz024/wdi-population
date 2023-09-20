@@ -36,10 +36,10 @@ primary key.
 
 ## Normalization 
 
-Initial database was an attempt to combine World Bank indicators with continent. Such attempt created
-
-
-
+Initial database was an attempt to combine World Bank indicators with continent data. The attempt highlighted
+anomalies such as unknown character codes, unmatched records, and duplicates that were seen through the use
+of join queries. Database was then normalized by enforcing referential integrity in accordance with
+the ERD and updating/deleting anomalies. 
 
 ## Analysis
 <img src="Screenshots/m7_view.png" width="550" height="300" />
@@ -57,7 +57,6 @@ to the database storage.
 
 Created a two-column index: "ix_country_data_country_code_indicator_code" that boosted query performance by 7.5 seconds while 
 only adding 194MB to the main "country_data" table.
-
 
 ## Notes
 Data retrieved from https://data.worldbank.org/
