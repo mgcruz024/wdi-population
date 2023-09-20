@@ -2,6 +2,9 @@
 
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
+A database containing global population data from [The World Bank](https://data.worldbank.org/). Features 213 countries with data spanning 
+from 1950 to 2018 for ten unique population indicators. 
+
 
 Population Indicators:
 - EN_URB_LCTY = population in largest city (1960-2018)
@@ -30,7 +33,7 @@ an associative entity containing a list of countries for each continent. "Countr
 associate entity that contains a list of each country's indicator value, with date as the 
 primary key. 
 
-## Cleansing and Normalization 
+## Normalization 
 
 
 
