@@ -3,8 +3,9 @@
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
 A database containing global population data from [The World Bank](https://data.worldbank.org/). Features 213 countries with data spanning 
-from 1950 to 2018 for ten unique population indicators. 
-
+from 1950 to 2018 for ten unique population indicators. Supplemental analysis is provided with an SQL appendix to showcase examples 
+of powerful answers that can be queried and visualized with this database. Model is normalized to reflect real-life relationships between
+countries and continents and enforce standardized naming procedures. 
 
 Population Indicators:
 - EN_URB_LCTY = population in largest city (1960-2018)
@@ -53,8 +54,8 @@ population % growth for all countries since 2010 and sort them in descending ord
 [Improved](Maintenance/wdi_db_maintenance.sql) the performance of retrieval queries while limiting any significant increases
 to the database storage. 
 
-Created a two-column index: "ix_country_data_country_code_indicator_code"
-that boosted query performance by 7.5 seconds while only adding 194MB to the main "country_data" table.
+Created a two-column index: "ix_country_data_country_code_indicator_code" that boosted query performance by 7.5 seconds while 
+only adding 194MB to the main "country_data" table.
 
 
 ## Notes
