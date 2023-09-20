@@ -22,7 +22,7 @@ primary key.
 
 ## Analysis
 <img src="Screenshots/m7_view.png" width="550" height="300" />
-<img src="Screenshots/m7_sql.png" width="550" height="300" />
+<img src="Screenshots/m7_sql.png" width="450" height="300" />
 
 
 
