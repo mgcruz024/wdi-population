@@ -5,7 +5,6 @@ WDI-Database
 ------------- Inspect initial database -------------
 ----------------------------------------------------
 
--- import
 SELECT COUNT(*) FROM country2;
 SELECT * FROM country2 LIMIT 10;
 
