@@ -21,8 +21,8 @@ primary key.
 
 
 ## Analysis
-<img src="Screenshots/m7_view.png" width="650" height="375" />
-<img src="Screenshots/m7_sql.png" width="650" height="375" />
+<img src="Screenshots/m7_view.png" width="550" height="300" />
+<img src="Screenshots/m7_sql.png" width="550" height="300" />
 
 
 
