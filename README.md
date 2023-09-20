@@ -22,6 +22,7 @@ PostgreSQL
 <img src="Screenshots/m7_sql.png" width="650" height="375" />
 
 
+[a link](Maintenance/wdi_db_maintenance.sql)
 
 
 
