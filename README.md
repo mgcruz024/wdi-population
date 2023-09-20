@@ -12,7 +12,7 @@ PostgreSQL
 ERD showcases the relationships between the five entities in the WDI Database. "Continent_country" is
 an associative entity containing a list of countries for each continent. "Country_data" is the main
 associate entity that contains a list of each country's indicator value, with date as the 
-primary key.
+primary key. 
 
 ## Cleansing
 
