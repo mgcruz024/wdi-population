@@ -38,7 +38,7 @@ primary key.
 
 Initial database was an attempt to combine World Bank indicators with continent data. The attempt highlighted
 anomalies such as unknown character codes, unmatched records, and duplicates that were seen through the use
-of join queries. Database was then normalized by enforcing referential integrity in accordance with
+of join queries. Database became normalized by enforcing referential integrity in accordance with
 the ERD and updating/deleting anomalies. 
 
 ## Analysis
