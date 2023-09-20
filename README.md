@@ -22,13 +22,13 @@ PostgreSQL
 <img src="Screenshots/m7_sql.png" width="650" height="375" />
 
 
-[a link](Maintenance/wdi_db_maintenance.sql)
+
 
 
 
 ## Maintenance
 
-Improved the performance of retrieval queries while limiting any significant increases
+[Improved](Maintenance/wdi_db_maintenance.sql) the performance of retrieval queries while limiting any significant increases
 to the database storage. 
 
 Created a two-column index: "ix_country_data_country_code_indicator_code"
