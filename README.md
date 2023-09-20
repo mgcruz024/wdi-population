@@ -3,7 +3,7 @@
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
 A database containing global population data from [The World Bank](https://data.worldbank.org/). Features 213 countries with data spanning 
-from 1950 to 2018 for ten unique population indicators. [Supplemental Analysis](population_queries.pdf) is provided with an SQL appendix to showcase examples 
+from 1950 to 2018 for 10 unique population indicators. [Supplemental Analysis](population_queries.pdf) is provided with an SQL appendix to showcase examples 
 of powerful answers that can be queried and visualized with this database. Model is normalized to reflect real-life relationships between
 countries and continents and enforce standardized naming procedures. 
 
@@ -36,6 +36,7 @@ primary key.
 
 ## Normalization 
 
+Initial database was an attempt to combine World Bank indicators with continent. Such attempt created
 
 
 
