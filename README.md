@@ -36,9 +36,10 @@ primary key.
 
 ## Normalization 
 
-Initial database was an attempt to combine World Bank indicators with continent data. The attempt highlighted
-anomalies such as unknown character codes, unmatched records, and duplicates through the use of [join queries](https://github.com/mgcruz024/wdi-population/blob/e7a261c1dcc20e592732467678e5840eccb088f3/main.sql#L145).
-Database became normalized by enforcing referential integrity in accordance with the ERD and updating/deleting/insertion methods. 
+Initial database was an attempt to combine World Bank indicators with continent data. The attempt created
+anomalies such as unknown character codes, unmatched records, and duplicates that were highlighted through the 
+use of [join queries](https://github.com/mgcruz024/wdi-population/blob/e7a261c1dcc20e592732467678e5840eccb088f3/main.sql#L145). Database became 
+normalized by enforcing referential integrity in accordance with the ERD and updating/deleting/insertion methods. 
 
 
 ## Analysis
