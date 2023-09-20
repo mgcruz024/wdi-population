@@ -25,9 +25,12 @@ PostgreSQL
 
 
 
-
-
 ## Maintenance
+
+Improved the performance of retrieval queries while limiting any significant increases
+to the database storage. Created a two-column index: "ix_country_data_country_code_indicator_code"
+that boosted query performance by 7.5 seconds while only adding 194MB to the main "country_data" table.
+
 
 ## Notes
 Data retrieved from https://data.worldbank.org/
