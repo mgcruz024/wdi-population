@@ -47,7 +47,7 @@ normalized by enforcing referential integrity in accordance with the ERD and upd
 <img src="Screenshots/m7_sql.png" width="450" height="300" />
 
 WDI Database allows for the execution of complex, Type I, and Type II nested queries that deliver
-tangible answers to questions pertaining to the global population. With the many indicators available,
+[tangible answers to questions](population_queries.pdf) pertaining to the global population. With the many indicators available,
 questions such as the M7 example above can be answered. M7 uses a nested query to calculate the average
 population % growth for all countries since 2010 and sort them in descending order.
 
