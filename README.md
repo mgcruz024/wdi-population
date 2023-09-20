@@ -2,6 +2,24 @@
 
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
+
+Population Indicators:
+- EN_URB_LCTY.csv = population in largest city (1960-2018)
+- SP_POP_TOTL.csv = population, total (1950-2018)
+- SP_URB_TOTL.csv = Urban Population (1950-2018)
+- SP_URB_GROW.csv = Urban population growth (annual %) (1951-2018)
+- SM_POP_NETM.csv = Net migration (1952-2017)
+- IS_AIR_PSGR.csv = Air transport, passengers carried
+- NY_GDP_MKTP_CD.csv = GDP (current US$)
+- NY_GDP_PCAP_CD.csv = GDP per capita (current US$)
+- SH_MED_BEDS_ZS.csv = Hospital beds (per 1,000 people)
+- FP_CPI_TOTL_ZG.csv = Inflation, consumer prices (annual %)
+- IT_NET_USER_P2.csv = Internet users (per 100 people)
+
+
+
+
+
 ## Packages Used
 PostgreSQL
 - SQL
