@@ -31,6 +31,8 @@ Python 3.10
 - pandas
 - psycopg2
 - seaborn
+- matplotlib
+- sci-kit learn
 
 ## ERD
 <img src="Screenshots/Final ERD.PNG" width="650" height="375" />
