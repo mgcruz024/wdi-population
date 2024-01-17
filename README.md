@@ -4,7 +4,7 @@
 
 A database containing global population data from [The World Bank](https://data.worldbank.org/). Features 213 countries with data spanning 
 from 1950 to 2018 for 10 unique population indicators. [Analysis](main.ipynb) is provided with an SQL appendix to showcase examples 
-of powerful answers that can be queried and visualized with this database by combining our data with the limitless potential of Python data science libraries. 
+of powerful answers that can be queried and visualized with this database by combining our data with the limitless potential of Python's data science libraries. 
 Model is normalized to reflect real-world relationships between countries and continents and enforce standardized naming procedures. 
 
 Population Indicators:
@@ -25,6 +25,10 @@ Population Indicators:
 ## Packages Used
 PostgreSQL 14
 - SQL
+Python 3.10
+- Pandas
+- psycopg2
+- Seaborn
 
 ## ERD
 <img src="Screenshots/Final ERD.PNG" width="650" height="375" />
@@ -40,15 +44,6 @@ Initial database was an attempt to combine World Bank indicators with continent 
 anomalies such as unknown character codes, unmatched records, and duplicates that were highlighted through the 
 use of [join queries](https://github.com/mgcruz024/wdi-population/blob/22f9fafdce78f467603502e993ab6ab34b383712/wdi_db_creation.sql#L145). Database became 
 normalized by enforcing referential integrity in accordance with the ERD and updating/deleting/insertion methods. 
-
-## Analysis
-<img src="Screenshots/m7_view.png" width="550" height="300" />
-<img src="Screenshots/m7_sql.png" width="450" height="300" />
-
-WDI Database allows for the execution of complex, Type I, and Type II nested queries that deliver
-[tangible answers to questions](main.ipynb) pertaining to the global population. With the many indicators available,
-questions such as the M7 example above can be answered. M7 uses a nested query to calculate the average
-population % growth for all countries since 2010 and sort them in descending order.
 
 ## Maintenance
 
