@@ -38,16 +38,15 @@ primary key.
 
 Initial database was an attempt to combine World Bank indicators with continent data. The attempt created
 anomalies such as unknown character codes, unmatched records, and duplicates that were highlighted through the 
-use of [join queries](https://github.com/mgcruz024/wdi-population/blob/e7a261c1dcc20e592732467678e5840eccb088f3/main.sql#L145). Database became 
+use of [join queries](https://github.com/mgcruz024/wdi-population/blob/e7a261c1dcc20e592732467678e5840eccb088f3/main.sql#L145](https://github.com/mgcruz024/wdi-population/blob/22f9fafdce78f467603502e993ab6ab34b383712/wdi_db_creation.sql#L145). Database became 
 normalized by enforcing referential integrity in accordance with the ERD and updating/deleting/insertion methods. 
-
 
 ## Analysis
 <img src="Screenshots/m7_view.png" width="550" height="300" />
 <img src="Screenshots/m7_sql.png" width="450" height="300" />
 
 WDI Database allows for the execution of complex, Type I, and Type II nested queries that deliver
-[tangible answers to questions](population_queries.pdf) pertaining to the global population. With the many indicators available,
+[tangible answers to questions](main.ipynb) pertaining to the global population. With the many indicators available,
 questions such as the M7 example above can be answered. M7 uses a nested query to calculate the average
 population % growth for all countries since 2010 and sort them in descending order.
 
