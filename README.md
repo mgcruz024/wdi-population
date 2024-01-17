@@ -1,11 +1,11 @@
-# World Bank Database and Population Analysis With PostgreSQL
+# World Bank Database and Population Analysis With PostgreSQL and Python
 
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
 A database containing global population data from [The World Bank](https://data.worldbank.org/). Features 213 countries with data spanning 
 from 1950 to 2018 for 10 unique population indicators. [Analysis](main.ipynb) is provided with an SQL appendix to showcase examples 
-of powerful answers that can be queried and visualized with this database. Model is normalized to reflect real-world relationships between
-countries and continents and enforce standardized naming procedures. 
+of powerful answers that can be queried and visualized with this database by combining our data with the limitless potential of Python data science libraries. 
+Model is normalized to reflect real-world relationships between countries and continents and enforce standardized naming procedures. 
 
 Population Indicators:
 - EN_URB_LCTY = population in largest city (1960-2018)
