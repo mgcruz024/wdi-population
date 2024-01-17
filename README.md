@@ -1,4 +1,4 @@
-# World Bank Database and Population Analysis With PostgreSQL and Python
+# World Bank Database and Population Analysis With PostgreSQL and Python (psycopg2)
 
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
@@ -24,11 +24,12 @@ Population Indicators:
 
 ## Packages Used
 PostgreSQL 14
-- SQL
+- sql
+
 Python 3.10
-- Pandas
+- pandas
 - psycopg2
-- Seaborn
+- seaborn
 
 ## ERD
 <img src="Screenshots/Final ERD.PNG" width="650" height="375" />
