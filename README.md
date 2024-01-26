@@ -2,6 +2,7 @@
 
 <img src="Screenshots/World_Bank.jpeg.jpg" width="650" height="375" />
 
+## Overview
 A database containing global population data from [The World Bank](https://data.worldbank.org/). Features 213 countries with data spanning 
 from 1950 to 2018 for 10 unique population indicators. [Analysis](main.ipynb) is provided with an SQL appendix to showcase examples 
 of powerful answers that can be queried and visualized with this database by combining our data with the limitless potential of Python's data science libraries. 
